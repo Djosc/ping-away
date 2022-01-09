@@ -10,17 +10,21 @@ import {
 	SidebarBtn,
 } from './SidebarElements';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
 	return (
 		<>
-			<SidebarContainer>
-				<Icon>
+			<SidebarContainer isOpen={isOpen} onClick={toggle}>
+				<Icon onClick={toggle}>
 					<CloseIcon />
 				</Icon>
 				<SidebarWrapper>
 					<SidebarMenu>
-						<SidebarLink to="about">About</SidebarLink>
-						<SidebarLink to="contact">Contact</SidebarLink>
+						<SidebarLink to="about" onClick={toggle}>
+							About
+						</SidebarLink>
+						<SidebarLink to="contact" onClick={toggle}>
+							Contact
+						</SidebarLink>
 					</SidebarMenu>
 					<SideBtnWrap>
 						<SidebarBtn to="/">Empty</SidebarBtn>
