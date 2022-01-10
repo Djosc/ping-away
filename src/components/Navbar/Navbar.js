@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import {
 	Nav,
 	NavbarContainer,
@@ -13,20 +14,35 @@ import {
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+	const toggleHome = () => {
+		scroll.scrollToTop();
+	};
+	const toggleContact = () => {
+		scroll.scrollToBottom();
+	};
 	return (
 		<>
 			<Nav>
 				<NavbarContainer>
-					<NavLogo to="/">Yo</NavLogo>
+					<NavLogo to="/" onClick={toggleHome}>
+						Yo
+					</NavLogo>
 					<MobileIcon onClick={toggle}>
 						<Bars />
 					</MobileIcon>
 					<NavMenu>
 						<NavItem>
-							<NavLink to="about">About</NavLink>
+							<NavLink to="about" spy={true} smooth={true} offset={-80} duration={500}>
+								About
+							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink to="contact">Contact</NavLink>
+							<NavLink to="projects">Projects</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to="contact" onClick={toggleContact}>
+								Contact
+							</NavLink>
 						</NavItem>
 					</NavMenu>
 					<NavBtn>

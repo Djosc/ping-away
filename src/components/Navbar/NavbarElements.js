@@ -4,12 +4,12 @@ import { Link as LinkS } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
-	background: #bbb;
+	background: #000;
 	height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	position: sticky;
 	top: 0;
 	z-index: 10;
@@ -28,11 +28,11 @@ export const NavbarContainer = styled.div`
 	max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
 	color: #fff;
 	justify-self: flex-start;
 	cursor: pointer;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	display: flex;
 	align-items: center;
 	margin-left: 24px;
@@ -96,11 +96,10 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkS)`
-	border-radius: 50px;
-	background: #ccc;
+	background: #fff;
 	white-space: nowrap;
 	padding: 10px 22px;
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	outline: none;
 	border: none;
@@ -112,5 +111,6 @@ export const NavBtnLink = styled(LinkS)`
 		transition: all ease-in-out;
 		background: #fff;
 		color: #000;
+		transform: translateY(-2px);
 	}
 `;

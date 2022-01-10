@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	MainContainer,
 	MainBg,
@@ -7,6 +7,7 @@ import {
 	MainContent,
 	MainPortrait,
 	MainH1,
+	MainH2,
 	MainBtnWrap,
 	DefaultArrow,
 	RightArrow,
@@ -14,9 +15,12 @@ import {
 
 import video from '../../videos/video1.mp4';
 // import bgImage from '../../images/black-sand.jpg';
-import bgImage from '../../images/grayBg.jpg';
+import bgImage from '../../images/greyBg.jpg';
 import portrait from '../../images/linkedin-image-redux.jpg';
 import { Button } from '../Button/Button';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Main = () => {
 	const [hover, setHover] = useState(false);
@@ -24,6 +28,10 @@ const Main = () => {
 	const onHover = () => {
 		setHover(!hover);
 	};
+
+	useEffect(() => {
+		AOS.init({ duration: 5000 });
+	}, []);
 
 	return (
 		<>
@@ -34,20 +42,26 @@ const Main = () => {
 				</MainBg>
 				<MainContent>
 					{/* <MainPortrait src={portrait} /> */}
+					{/* <div data-aos="fade-down-left"> */}
 					<MainH1>David Caldwell</MainH1>
-					<MainH1>Web Developer</MainH1>
-					<MainBtnWrap>
-						<Button
-							// to="projects"
-							to="/"
-							primary={'true'}
-							big={'true'}
-							onMouseEnter={onHover}
-							onMouseLeave={onHover}
-						>
-							See My Projects {hover ? <RightArrow /> : <></>}
-						</Button>
-					</MainBtnWrap>
+					{/* </div> */}
+					{/* <div data-aos="fade-down-right"> */}
+					<MainH2>Web Developer</MainH2>
+					{/* </div> */}
+					<div data-aos="flip-up">
+						<MainBtnWrap>
+							<Button
+								// to="projects"
+								to="/"
+								primary={'true'}
+								big={'true'}
+								onMouseEnter={onHover}
+								onMouseLeave={onHover}
+							>
+								See My Projects {hover ? <RightArrow /> : <></>}
+							</Button>
+						</MainBtnWrap>
+					</div>
 				</MainContent>
 			</MainContainer>
 		</>

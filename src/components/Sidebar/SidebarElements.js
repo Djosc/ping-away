@@ -8,7 +8,7 @@ export const SidebarContainer = styled.div`
 	z-index: 999;
 	width: 100%;
 	height: 100%;
-	background: #bbb;
+	background: #000;
 	display: grid;
 	align-items: center;
 	top: 0;
@@ -70,11 +70,10 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SidebarBtn = styled(LinkR)`
-	border-radius: 50px;
-	background: #000;
+	background: #fff;
 	white-space: nowrap;
 	padding: 16px 64px;
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	outline: none;
 	border: none;

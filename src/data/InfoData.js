@@ -2,8 +2,6 @@
 // import ImageTwo from '../images/data-processing.svg';
 import ImageOne from '../images/build.svg';
 import ImageTwo from '../images/data.svg';
-import ImageThree from '../images/Art7.jpg';
-import ImageFour from '../images/Art8.jpg';
 
 export const InfoData = {
 	heading: 'Lorem Ipsum',
@@ -14,6 +12,7 @@ export const InfoData = {
 	buttonLabel: 'Learn More',
 	image: ImageOne,
 	reverse: false,
+	dark: true,
 	delay: 100,
 };
 
@@ -26,6 +25,7 @@ export const InfoDataTwo = {
 	buttonLabel: 'Learn More',
 	image: ImageTwo,
 	reverse: true,
+	dark: false,
 	delay: 100,
 };
 

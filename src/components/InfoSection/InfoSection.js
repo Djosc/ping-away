@@ -12,6 +12,7 @@ const InfoSection = ({
 	buttonLabel,
 	image,
 	reverse,
+	dark,
 	dataAOS,
 }) => {
 	useEffect(() => {
@@ -19,10 +20,10 @@ const InfoSection = ({
 	}, []);
 
 	return (
-		<Section>
+		<Section dark={dark}>
 			<div data-aos={dataAOS}>
 				<Container>
-					<ColumnLeft reverse={reverse}>
+					<ColumnLeft reverse={reverse} dark={dark}>
 						<h1>{heading}</h1>
 						<p>{paragraphOne}</p>
 						<p>{paragraphTwo}</p>

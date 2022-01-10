@@ -4,9 +4,9 @@ import { Link } from 'react-scroll';
 export const Button = styled(Link)`
 	/* background: ${({ primary }) => (primary ? '#000d1a' : '#CD853F')}; */
 	background: ${({ primary }) => (primary ? '#000' : '#000')};
+	border: 2px solid black;
 	white-space: nowrap;
 	outline: none;
-	border: none;
 	min-width: 100px;
 	max-width: 300px;
 	cursor: pointer;

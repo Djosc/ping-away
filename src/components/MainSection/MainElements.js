@@ -44,10 +44,10 @@ export const ImageBg = styled.img`
 export const MainContent = styled.div`
 	z-index: 3;
 	top: 30%;
-	left: 15%;
+	left: 20%;
 	max-width: 1200px;
 	position: absolute;
-	padding: 8px 24px;
+	/* padding: 8px 24px; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -61,7 +61,7 @@ export const MainContent = styled.div`
 
 export const MainH1 = styled.h1`
 	color: #fff;
-	font-size: 48px;
+	font-size: 52px;
 	text-align: center;
 
 	@media screen and (max-width: 768px) {
@@ -69,7 +69,21 @@ export const MainH1 = styled.h1`
 	}
 
 	@media screen and (max-width: 480px) {
-		font-size: 28px;
+		font-size: 32px;
+	}
+`;
+
+export const MainH2 = styled.h1`
+	color: #000;
+	font-size: 52px;
+	text-align: center;
+
+	@media screen and (max-width: 768px) {
+		font-size: 34px;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 32px;
 	}
 `;
 

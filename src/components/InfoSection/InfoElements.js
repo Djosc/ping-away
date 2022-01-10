@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Section = styled.section`
 	width: 100%;
 	height: 100%;
-	background: #787878;
-	padding: 3rem 0rem;
+	background: ${({ dark }) => (dark ? '#000' : '#fff')};
+	padding: 1rem 0rem;
 `;
 export const Container = styled.div`
 	padding: 2rem calc((100vw - 1300px) / 2);
@@ -30,12 +30,12 @@ export const ColumnLeft = styled.div`
 	h1 {
 		margin-bottom: 1rem;
 		font-size: clamp(1.5rem, 6vw, 2rem);
-		color: #fff;
+		color: ${({ dark }) => (dark ? '#fff' : '#000')};
 	}
 
 	p {
 		margin-bottom: 2rem;
-		color: #fff;
+		color: ${({ dark }) => (dark ? '#fff' : '#000')};
 	}
 `;
 

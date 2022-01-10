@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Navbar from '../components/Navbar/Navbar';
 import Main from '../components/MainSection/Main';
 import InfoSection from '../components/InfoSection/InfoSection';
+import About from '../components/AboutSection/About';
 
 import { InfoData, InfoDataTwo } from '../data/InfoData';
 
@@ -18,7 +19,7 @@ const Home = () => {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<Main />
-
+			<About />
 			<InfoSection {...InfoData} dataAOS={'fade-left'} />
 			<InfoSection {...InfoDataTwo} dataAOS={'fade-right'} />
 		</>
