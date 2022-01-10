@@ -1,7 +1,7 @@
 // import ImageOne from '../images/iteration.svg';
 // import ImageTwo from '../images/data-processing.svg';
-import ImageOne from '../images/Art5.jpg';
-import ImageTwo from '../images/Art6.jpg';
+import ImageOne from '../images/build.svg';
+import ImageTwo from '../images/data.svg';
 import ImageThree from '../images/Art7.jpg';
 import ImageFour from '../images/Art8.jpg';
 

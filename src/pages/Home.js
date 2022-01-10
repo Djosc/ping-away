@@ -6,9 +6,6 @@ import InfoSection from '../components/InfoSection/InfoSection';
 
 import { InfoData, InfoDataTwo } from '../data/InfoData';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -16,21 +13,14 @@ const Home = () => {
 		setIsOpen(!isOpen);
 	};
 
-	useEffect(() => {
-		AOS.init({ duration: 2000 });
-	}, []);
-
 	return (
 		<>
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<Main />
-			<div data-aos="fade-left">
-				<InfoSection {...InfoData} />
-			</div>
-			<div data-aos="fade-right">
-				<InfoSection {...InfoDataTwo} />
-			</div>
+
+			<InfoSection {...InfoData} dataAOS={'fade-left'} />
+			<InfoSection {...InfoDataTwo} dataAOS={'fade-right'} />
 		</>
 	);
 };

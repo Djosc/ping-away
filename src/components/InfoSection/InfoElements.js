@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Section = styled.section`
 	width: 100%;
 	height: 100%;
-	padding: 4rem 0rem;
+	background: #787878;
+	padding: 3rem 0rem;
 `;
 export const Container = styled.div`
-	padding: 3rem calc((100vw - 1300px) / 2);
+	padding: 2rem calc((100vw - 1300px) / 2);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 800px;
@@ -52,7 +53,7 @@ export const ColumnRight = styled.div`
 	img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		/* object-fit: cover; */
 
 		@media screen and (max-width: 768px) {
 			width: 90%;
