@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Navbar from '../components/Navbar/Navbar';
 import Main from '../components/MainSection/Main';
-import InfoSection from '../components/InfoSection/InfoSection';
+import ProjectSection from '../components/ProjectSection/ProjectSection';
 import About from '../components/AboutSection/About';
+import Footer from '../components/Footer/Footer';
 
-import { InfoData, InfoDataTwo } from '../data/InfoData';
+import { ProjectData, ProjectDataTwo } from '../data/ProjectData';
 
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,10 @@ const Home = () => {
 			<Navbar toggle={toggle} />
 			<Main />
 			<About />
-			<InfoSection {...InfoData} dataAOS={'fade-left'} />
-			<InfoSection {...InfoDataTwo} dataAOS={'fade-right'} />
+			<ProjectSection {...ProjectData} dataAOS={'fade-up'} firstSection={true} />
+			<ProjectSection {...ProjectDataTwo} dataAOS={'fade-up'} firstSection={false} />
+			{/* <ProjectSection {...ProjectDataTwo} dataAOS={'fade-right'} /> */}
+			<Footer />
 		</>
 	);
 };

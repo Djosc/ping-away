@@ -52,7 +52,11 @@ const Main = () => {
 						<MainBtnWrap>
 							<Button
 								// to="projects"
-								to="/"
+								to="projects"
+								spy={true}
+								smooth={true}
+								offset={-77}
+								duration={500}
 								primary={'true'}
 								big={'true'}
 								onMouseEnter={onHover}

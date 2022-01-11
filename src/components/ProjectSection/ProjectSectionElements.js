@@ -10,12 +10,12 @@ export const Container = styled.div`
 	padding: 2rem calc((100vw - 1300px) / 2);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 800px;
+	grid-template-rows: 1fr;
 
 	@media screen and (max-width: 768px) {
 		grid-template-columns: 1fr;
 
-		grid-template-rows: 500px;
+		grid-template-rows: 1fr;
 	}
 `;
 export const ColumnLeft = styled.div`
@@ -59,5 +59,24 @@ export const ColumnRight = styled.div`
 			width: 90%;
 			height: 70vh;
 		}
+	}
+`;
+
+export const BtnWrap = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0rem;
+`;
+
+export const Heading = styled.h1`
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 32px;
+	padding-top: 2rem;
+
+	@media screen and (max-width: 768px) {
+		font-size: 28px;
 	}
 `;

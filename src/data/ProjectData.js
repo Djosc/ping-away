@@ -3,30 +3,34 @@
 import ImageOne from '../images/build.svg';
 import ImageTwo from '../images/data.svg';
 
-export const InfoData = {
+export const ProjectData = {
 	heading: 'Lorem Ipsum',
 	paragraphOne:
 		'Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem ipsumLorem ipsumLorem ipsum',
-	paragraphTwo:
-		'Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem ipsumLorem ipsumLorem ipsum',
-	buttonLabel: 'Learn More',
+
+	liveLinkLabel: 'Live Demo',
+	liveLink: 'https://myflix-davidcaldwell.netlify.app/',
+	githubLinkLabel: 'Github Repo',
+	githubLink: 'https://github.com/Djosc/myFlix-client',
 	image: ImageOne,
 	reverse: false,
 	dark: true,
-	delay: 100,
+	primary: false,
 };
 
-export const InfoDataTwo = {
+export const ProjectDataTwo = {
 	heading: 'Lorem Ipsum',
 	paragraphOne:
 		'Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem ipsumLorem ipsumLorem ipsum',
-	paragraphTwo:
-		'Lorem ipsum Lorem Lorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem ipsumLorem ipsumLorem ipsum',
-	buttonLabel: 'Learn More',
+
+	liveLinkLabel: 'Live Demo',
+	liveLink: '',
+	githubLinkLabel: 'Github Repo',
+	githubLink: '',
 	image: ImageTwo,
 	reverse: true,
 	dark: false,
-	delay: 100,
+	primary: true,
 };
 
 // export const InfoDataThree = {
