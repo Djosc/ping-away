@@ -11,6 +11,7 @@ import {
 	FooterContact,
 	FormLabel,
 	FormInput,
+	FormInputArea,
 	FormH1,
 	BtnWrap,
 } from './FooterElements';
@@ -42,7 +43,7 @@ const Footer = () => {
 							<FormInput type="text" placeholder="Name" name="name" />
 							<FormInput type="email" placeholder="Email" name="email" />
 							<FormInput type="text" placeholder="Subject" name="subject" />
-							<FormInput type="text" placeholder="Message" name="message" />
+							<FormInputArea type="text" placeholder="Message" name="message" />
 							<BtnWrap>
 								<Button primary="true" dark="true" big="true">
 									Send

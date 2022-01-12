@@ -4,7 +4,7 @@ export const Section = styled.section`
 	width: 100%;
 	height: 100%;
 	background: ${({ dark }) => (dark ? '#000' : '#fff')};
-	padding: 1rem 0rem;
+	padding: 4rem 0rem;
 `;
 export const Container = styled.div`
 	padding: 2rem calc((100vw - 1300px) / 2);
@@ -24,7 +24,7 @@ export const ColumnLeft = styled.div`
 	justify-content: center;
 	align-items: flex-start;
 	line-height: 1.4;
-	padding: 1rem 2rem;
+	padding: 1rem 3rem;
 	order: ${({ reverse }) => (reverse ? '2' : '1')};
 
 	h1 {
@@ -74,7 +74,7 @@ export const Heading = styled.h1`
 	color: #fff;
 	font-weight: bold;
 	font-size: 32px;
-	padding-top: 2rem;
+	padding-top: 1rem;
 
 	@media screen and (max-width: 768px) {
 		font-size: 28px;

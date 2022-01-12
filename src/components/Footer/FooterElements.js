@@ -81,6 +81,13 @@ export const FormInput = styled.input`
 	border: 2px solid #000;
 `;
 
+export const FormInputArea = styled.textarea`
+	padding: 1rem 1rem;
+	margin-bottom: 2rem;
+	border: 2px solid #000;
+	height: 300px;
+`;
+
 export const FooterInfo = styled.div`
 	color: #fff;
 	align-items: center;
