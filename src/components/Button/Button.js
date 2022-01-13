@@ -8,7 +8,7 @@ export const Button = styled(Link)`
 	white-space: nowrap;
 	outline: none;
 	min-width: 150px;
-	max-width: 300px;
+	max-width: 350px;
 	cursor: pointer;
 	text-decoration: none;
 	transition: 0.3s;
@@ -18,7 +18,8 @@ export const Button = styled(Link)`
 	padding: ${({ big }) => (big ? '16px 40px' : '14px 24px')};
 	color: ${({ primary }) => (primary ? '#fff' : '#000')};
 	font-size: ${({ big }) => (big ? '18px' : '14px')};
-	margin: 0rem 0.5rem;
+	margin-right: 0.7rem;
+	margin-left: 0.7rem;
 
 	&:hover {
 		transform: translateY(-2px);

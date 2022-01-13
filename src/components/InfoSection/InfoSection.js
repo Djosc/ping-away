@@ -6,7 +6,7 @@ import {
 	ColumnRight,
 	BtnWrap,
 	Heading,
-} from './ProjectSectionElements';
+} from './InfoSectionElements';
 import { Button } from '../Button/Button';
 
 import AOS from 'aos';

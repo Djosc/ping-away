@@ -3,6 +3,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 export const MainContainer = styled.div`
 	background: #000;
+	top: -80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +22,7 @@ export const MainBg = styled.div`
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 100vh;
+	height: 111vh;
 	overflow: hidden;
 	/* background-attachment: fixed; */
 `;
@@ -41,18 +42,35 @@ export const ImageBg = styled.img`
 	object-fit: cover;
 `;
 
-export const MainContent = styled.div`
-	z-index: 3;
-	top: 30%;
-	left: 20%;
-	max-width: 1200px;
+export const MainColumnLeft = styled.div`
 	position: absolute;
-	/* padding: 8px 24px; */
-	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	line-height: 1.4;
+	z-index: 5;
+	margin-bottom: 5em;
+	/* margin-right: 15em; */
+
+	h1 {
+		text-align: center;
+		margin-bottom: 2rem;
+		font-size: clamp(2rem, 8vw, 4rem);
+		color: #fff;
+	}
+
+	p {
+		font-size: clamp(0.4rem, 4vw, 1.5rem);
+		color: #fff;
+	}
 
 	@media screen and (max-width: 1280px) {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media screen and (max-width: 768px) {
 		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -96,9 +114,10 @@ export const MainPortrait = styled.img`
 export const MainBtnWrap = styled.div`
 	margin-top: 32px;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	align-items: center;
-	cursor: pointer;
+	justify-content: center;
+	z-index: 5;
 `;
 
 export const DefaultArrow = styled(BsArrowRight)`

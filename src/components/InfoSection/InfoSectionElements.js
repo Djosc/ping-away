@@ -24,7 +24,7 @@ export const ColumnLeft = styled.div`
 	justify-content: center;
 	align-items: flex-start;
 	line-height: 1.4;
-	padding: 1rem 3rem;
+	padding: 1rem 2rem;
 	order: ${({ reverse }) => (reverse ? '2' : '1')};
 
 	h1 {
