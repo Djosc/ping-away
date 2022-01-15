@@ -42,6 +42,7 @@ export const ImageBg = styled.img`
 
 export const MainColumnLeft = styled.div`
 	position: absolute;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -179,4 +180,23 @@ export const DiscoverMore = styled(LinkS)`
 export const DownArrow = styled(BsArrowDown)`
 	height: 50px;
 	width: 50px;
+`;
+
+export const VideoButton = styled.button`
+	background: #1e90ff;
+	border-radius: 50px;
+	border: 1px solid black;
+	white-space: nowrap;
+	outline: none;
+	min-width: 150px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.7rem;
+	margin-left: 0.7rem;
+	padding: 14px 29px;
+	font-size: 18px;
 `;

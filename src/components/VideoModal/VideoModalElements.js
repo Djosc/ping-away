@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { AiOutlineClose } from 'react-icons/ai';
 
 export const ModalBg = styled.div`
+	background: rgba(0, 0, 0, 0.8);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -13,7 +14,6 @@ export const ModalBg = styled.div`
 	z-index: 995;
 `;
 export const ModalContainer = styled.div`
-	background: #0b0b0b;
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -26,8 +26,8 @@ export const ModalVideo = styled.video`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 90vw;
-	height: 90vh;
+	width: 90%;
+	height: 90%;
 	z-index: 997;
 `;
 
@@ -35,8 +35,8 @@ export const ModalClose = styled(AiOutlineClose)`
 	cursor: pointer;
 	color: #fff;
 	position: absolute;
-	right: 5%;
-	top: 5%;
+	right: 3%;
+	top: 3%;
 	height: 50px;
 	width: 50px;
 	z-index: 998;

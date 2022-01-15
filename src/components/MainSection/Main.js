@@ -15,6 +15,7 @@ import {
 	EmailInput,
 	DiscoverMore,
 	DownArrow,
+	VideoButton,
 } from './MainElements';
 
 import video from '../../videos/video1.mp4';
@@ -62,9 +63,7 @@ const Main = () => {
 				<MainColumnLeft>
 					<h1>An Exciting New Product</h1>
 					<p>This product is amazing wow, so much saved space</p>
-					<Button onClick={onModal} primary={'true'} big={'true'}>
-						Watch Our Video
-					</Button>
+					<VideoButton onClick={onModal}>Watch Our Video</VideoButton>
 					<MainBtnWrap>
 						<EmailInput placeholder="Your best E-mail..."></EmailInput>
 						<Button
