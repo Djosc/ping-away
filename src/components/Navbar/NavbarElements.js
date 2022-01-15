@@ -35,7 +35,7 @@ export const NavLogo = styled(LinkS)`
 	font-size: 2rem;
 	display: flex;
 	align-items: center;
-	margin-left: 24px;
+	margin-left: 40px;
 	font-weight: bold;
 	text-decoration: none;
 `;

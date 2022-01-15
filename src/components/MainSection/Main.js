@@ -25,16 +25,23 @@ import portrait from '../../images/linkedin-image-redux.jpg';
 import { Button } from '../Button/Button';
 import mainImage from '../../images/data.svg';
 
+import VideoModal from '../VideoModal/VideoModal';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Main = () => {
+	const [openModal, setOpenModal] = useState(false);
 	const [hover, setHover] = useState(false);
 	const [hover2, setHover2] = useState(false);
 
 	useEffect(() => {
 		AOS.init({ duration: 5000 });
 	}, []);
+
+	const onModal = () => {
+		setOpenModal(!openModal);
+	};
 
 	const onHover = () => {
 		setHover(!hover);
@@ -47,6 +54,7 @@ const Main = () => {
 	return (
 		<>
 			<MainContainer>
+				{openModal ? <VideoModal closeModal={onModal} /> : <></>}
 				<MainBg>
 					{/* <VideoBg autoPlay loop muted src={video} type="video/mp4"></VideoBg> */}
 					<ImageBg src={bgImage} />
@@ -54,6 +62,9 @@ const Main = () => {
 				<MainColumnLeft>
 					<h1>An Exciting New Product</h1>
 					<p>This product is amazing wow, so much saved space</p>
+					<Button onClick={onModal} primary={'true'} big={'true'}>
+						Watch Our Video
+					</Button>
 					<MainBtnWrap>
 						<EmailInput placeholder="Your best E-mail..."></EmailInput>
 						<Button

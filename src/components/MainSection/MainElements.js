@@ -58,6 +58,7 @@ export const MainColumnLeft = styled.div`
 	}
 
 	p {
+		padding-bottom: 1rem;
 		text-align: center;
 		font-size: 1.7rem;
 		color: #fff;

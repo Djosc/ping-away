@@ -8,7 +8,7 @@ export const Button = styled(LinkS)`
 	white-space: nowrap;
 	outline: none;
 	min-width: 150px;
-	max-width: 350px;
+	/* max-width: 350px; */
 	cursor: pointer;
 	text-decoration: none;
 	transition: 0.3s;
