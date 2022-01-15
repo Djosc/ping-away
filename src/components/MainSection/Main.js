@@ -12,6 +12,9 @@ import {
 	MainBtnWrap,
 	DefaultArrow,
 	RightArrow,
+	EmailInput,
+	DiscoverMore,
+	DownArrow,
 } from './MainElements';
 
 import video from '../../videos/video1.mp4';
@@ -50,40 +53,23 @@ const Main = () => {
 				</MainBg>
 				<MainColumnLeft>
 					<h1>An Exciting New Product</h1>
+					<p>This product is amazing wow, so much saved space</p>
 					<MainBtnWrap>
+						<EmailInput placeholder="Your best E-mail..."></EmailInput>
 						<Button
-							to="projects"
-							spy={true}
-							smooth={true}
-							offset={-77}
-							duration={500}
-							primary={'true'}
-							big={'true'}
-							onMouseEnter={onHover}
-							onMouseLeave={onHover}
-						>
-							Learn More {hover ? <RightArrow></RightArrow> : <></>}
-						</Button>
-						<Button
-							to="projects"
-							spy={true}
-							smooth={true}
-							offset={-77}
-							duration={500}
 							primary={'true'}
 							big={'true'}
 							onMouseEnter={onHover2}
 							onMouseLeave={onHover2}
 						>
-							Sign up for our Newsletter{hover2 ? <RightArrow></RightArrow> : <></>}
+							Be The First To Know{hover2 ? <RightArrow></RightArrow> : <></>}
 						</Button>
 					</MainBtnWrap>
 				</MainColumnLeft>
-				{/* <MainPortrait src={portrait} /> */}
-				{/* <div data-aos="fade-down-left"> */}
-				{/* </div> */}
-				{/* <div data-aos="fade-down-right"> */}
-				{/* </div> */}
+				<DiscoverMore to="features" spy={true} smooth={true} offset={-74} duration={500}>
+					<h1>Discover More</h1>
+					<DownArrow></DownArrow>
+				</DiscoverMore>
 			</MainContainer>
 		</>
 	);

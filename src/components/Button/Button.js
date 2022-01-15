@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as LinkS } from 'react-scroll';
 
-export const Button = styled(Link)`
+export const Button = styled(LinkS)`
 	/* background: ${({ primary }) => (primary ? '#000d1a' : '#CD853F')}; */
 	background: ${({ primary }) => (primary ? '#000' : '#fff')};
 	border: 2px solid black;
@@ -23,5 +23,10 @@ export const Button = styled(Link)`
 
 	&:hover {
 		transform: translateY(-2px);
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 10px 14px;
+		font-size: 14px;
 	}
 `;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import {
 	Nav,
@@ -14,15 +14,30 @@ import {
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+	const [scrollNav, setScrollNav] = useState(false);
+
+	const changeNav = () => {
+		if (window.scrollY >= 100) {
+			setScrollNav(true);
+		} else {
+			setScrollNav(false);
+		}
+	};
+
 	const toggleHome = () => {
 		scroll.scrollToTop();
 	};
 	const toggleContact = () => {
 		scroll.scrollToBottom();
 	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', changeNav);
+	}, []);
+
 	return (
 		<>
-			<Nav>
+			<Nav scrollNav={scrollNav}>
 				<NavbarContainer>
 					<NavLogo to="/" onClick={toggleHome}>
 						Yo
@@ -37,7 +52,7 @@ const Navbar = ({ toggle }) => {
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink to="projects" spy={true} smooth={true} offset={-77} duration={500}>
+							<NavLink to="features" spy={true} smooth={true} offset={-77} duration={500}>
 								Projects
 							</NavLink>
 						</NavItem>
@@ -48,7 +63,7 @@ const Navbar = ({ toggle }) => {
 								smooth={true}
 								offset={-77}
 								duration={500}
-								onClick={toggleContact}
+								// onClick={toggleContact}
 							>
 								Contact
 							</NavLink>
