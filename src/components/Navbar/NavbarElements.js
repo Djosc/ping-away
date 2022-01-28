@@ -2,13 +2,22 @@ import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 
+const colors = {
+	primary: '#000',
+	secondary: '#2b2b2b',
+	primaryAccent: '#ff0000',
+	secondaryAccent: '#dbdbdb',
+	tertiaryAccent: '#fff',
+};
+
 export const Nav = styled.nav`
-	background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
-	height: 80px;
+	background: ${({ scrollNav }) =>
+		scrollNav ? `${colors.primaryAccent}` : 'transparent'};
+	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	position: sticky;
 	top: 0;
 	z-index: 10;
@@ -29,10 +38,10 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkS)`
-	color: #fff;
+	color: ${colors.tertiaryAccent};
 	justify-self: flex-start;
 	cursor: pointer;
-	font-size: 2rem;
+	font-size: 2.4rem;
 	display: flex;
 	align-items: center;
 	margin-left: 40px;
@@ -47,7 +56,7 @@ export const MobileIcon = styled.div`
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: translate(-100%, 60%);
+		transform: translate(-100%, 18%);
 		font-size: 1.8rem;
 		cursor: pointer;
 		color: #fff;

@@ -6,25 +6,16 @@ import {
 	ImageBg,
 	MainColumnLeft,
 	MainColumnRight,
-	MainPortrait,
-	MainH1,
-	MainH2,
 	MainBtnWrap,
-	DefaultArrow,
-	RightArrow,
 	EmailInput,
-	DiscoverMore,
-	DownArrow,
 	VideoButton,
 } from './MainElements';
 
 import video from '../../videos/video1.mp4';
-// import bgImage from '../../images/black-sand.jpg';
-// import bgImage from '../../images/greyBg.jpg';
 import bgImage from '../../images/pingpong.jpg';
-import portrait from '../../images/linkedin-image-redux.jpg';
 import { Button } from '../Button/Button';
-import mainImage from '../../images/data.svg';
+
+import { AiOutlinePlayCircle } from 'react-icons/ai';
 
 import VideoModal from '../VideoModal/VideoModal';
 
@@ -48,10 +39,6 @@ const Main = () => {
 		setHover(!hover);
 	};
 
-	const onHover2 = () => {
-		setHover2(!hover2);
-	};
-
 	return (
 		<>
 			<MainContainer>
@@ -63,23 +50,22 @@ const Main = () => {
 				<MainColumnLeft>
 					<h1>An Exciting New Product</h1>
 					<p>This product is amazing wow, so much saved space</p>
-					<VideoButton onClick={onModal}>Watch Our Video</VideoButton>
 					<MainBtnWrap>
 						<EmailInput placeholder="Your best E-mail..."></EmailInput>
-						<Button
-							primary={'true'}
-							big={'true'}
-							onMouseEnter={onHover2}
-							onMouseLeave={onHover2}
-						>
-							Be The First To Know{hover2 ? <RightArrow></RightArrow> : <></>}
-						</Button>
+						<Button big={'true'}>Be The First To Know</Button>
 					</MainBtnWrap>
+					<VideoButton onClick={onModal}>
+						Watch Our Video{' '}
+						<AiOutlinePlayCircle
+							style={{ marginLeft: '1rem', fontSize: '34px' }}
+						></AiOutlinePlayCircle>
+					</VideoButton>
 				</MainColumnLeft>
-				<DiscoverMore to="features" spy={true} smooth={true} offset={-74} duration={500}>
+				<MainColumnRight></MainColumnRight>
+				{/* <DiscoverMore to="features" spy={true} smooth={true} offset={-74} duration={500}>
 					<h1>Discover More</h1>
 					<DownArrow></DownArrow>
-				</DiscoverMore>
+				</DiscoverMore> */}
 			</MainContainer>
 		</>
 	);

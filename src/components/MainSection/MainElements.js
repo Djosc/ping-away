@@ -2,20 +2,28 @@ import styled from 'styled-components';
 import { BsArrowRight, BsArrowDown } from 'react-icons/bs';
 import { Link as LinkS } from 'react-scroll';
 
+const colors = {
+	primary: '#000',
+	secondary: '#2b2b2b',
+	primaryAccent: '#ff0000',
+	secondaryAccent: '#dbdbdb',
+	tertiaryAccent: '#fff',
+};
+
 export const MainContainer = styled.div`
-	background: #000;
+	background: transparent;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 94vh;
+	height: 85vh;
 	top: 0;
 	overflow: hidden;
 `;
 
 export const MainBg = styled.div`
-	/* position: fixed; */
-	position: absolute;
+	position: fixed;
+	/* position: absolute; */
 	top: 0;
 	right: 0;
 	left: 0;
@@ -42,6 +50,7 @@ export const ImageBg = styled.img`
 
 export const MainColumnLeft = styled.div`
 	position: absolute;
+	/* left: 4rem; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -59,7 +68,7 @@ export const MainColumnLeft = styled.div`
 	}
 
 	p {
-		padding-bottom: 1rem;
+		padding-bottom: 0;
 		text-align: center;
 		font-size: 1.7rem;
 		color: #fff;
@@ -74,49 +83,16 @@ export const MainColumnLeft = styled.div`
 			font-size: 1.2rem;
 		}
 	}
-	@media screen and (max-width: 768px) {
-		h1 {
-			font-size: 1.3rem;
-		}
-
-		p {
-			font-size: 0.8rem;
-		}
-	}
 `;
 
-export const MainH1 = styled.h1`
-	color: #fff;
-	font-size: 52px;
-	text-align: center;
-
-	@media screen and (max-width: 768px) {
-		font-size: 34px;
-	}
-
-	@media screen and (max-width: 480px) {
-		font-size: 32px;
-	}
-`;
-
-export const MainH2 = styled.h1`
-	color: #000;
-	font-size: 52px;
-	text-align: center;
-
-	@media screen and (max-width: 768px) {
-		font-size: 34px;
-	}
-
-	@media screen and (max-width: 480px) {
-		font-size: 32px;
-	}
-`;
-
-export const MainPortrait = styled.img`
-	width: 400px;
-	height: 600px;
-	border-radius: 50px;
+export const MainColumnRight = styled.div`
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.4;
+	z-index: 5;
+	margin-bottom: 8rem;
 `;
 
 export const MainBtnWrap = styled.div`
@@ -131,26 +107,17 @@ export const MainBtnWrap = styled.div`
 	}
 `;
 
-export const DefaultArrow = styled(BsArrowRight)`
-	margin-left: 8px;
-	font-size: 20px;
-`;
-
-export const RightArrow = styled(BsArrowRight)`
-	margin-left: 8px;
-	font-size: 20px;
-`;
-
 export const EmailInput = styled.input`
+	max-width: 320px;
 	font-size: 19px;
-	padding: 1rem 1rem;
+	padding: 0.2rem 1rem;
 	border: 2px solid black;
 	margin-right: 0.7rem;
 	margin-left: 0.7rem;
 
 	@media screen and (max-width: 768px) {
 		font-size: 14px;
-		padding: 0.5rem 0.5rem;
+		padding: 0.2rem 0.6rem;
 		margin-bottom: 0.5rem;
 	}
 `;
@@ -177,13 +144,16 @@ export const DiscoverMore = styled(LinkS)`
 	}
 `;
 
-export const DownArrow = styled(BsArrowDown)`
-	height: 50px;
-	width: 50px;
-`;
+// export const DownArrow = styled(BsArrowDown)`
+// 	height: 50px;
+// 	width: 50px;
+// `;
 
 export const VideoButton = styled.button`
-	background: #1e90ff;
+	background: ${colors.primaryAccent};
+	color: ${colors.tertiaryAccent};
+	margin-top: 2rem;
+	width: 50%;
 	border-radius: 50px;
 	border: 1px solid black;
 	white-space: nowrap;
@@ -197,6 +167,17 @@ export const VideoButton = styled.button`
 	align-items: center;
 	margin-right: 0.7rem;
 	margin-left: 0.7rem;
-	padding: 14px 29px;
+	padding: 7px 29px;
 	font-size: 18px;
+	transition: 0.3s ease-in-out;
+
+	&:hover {
+		background: ${colors.secondary};
+		/* color: ${colors.tertiaryAccent}; */
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 14px;
+		padding: 7px 20px;
+	}
 `;

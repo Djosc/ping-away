@@ -14,7 +14,7 @@ import {
 	IconDiv,
 } from './FeaturesElements';
 
-import image from '../../images/build.svg';
+// import image from '../../images/build.svg';
 
 const Features = () => {
 	return (
@@ -32,9 +32,7 @@ const Features = () => {
 							<h1>This is also text</h1>
 						</IconDiv>
 					</ColumnLeft>
-					<ColumnMiddle>
-						<img src={image} alt="info image" />
-					</ColumnMiddle>
+					<ColumnMiddle>{/* <img src={image} alt="info image" /> */}</ColumnMiddle>
 					<ColumnRight>
 						<IconDiv>
 							<RightImage1 />

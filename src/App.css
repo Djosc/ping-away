@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+@font-face {
+	font-family: 'Indonesia-script';
+	src: url(./fonts/Indonesiascript-vmJYO.otf);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Nunito', sans-serif;
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: 'Indonesia-script', sans-serif;
+	--primary: #000;
+	--secondary: #2b2b2b;
+	--primary-accent: #ff0000;
+	--secondary-accent: #dbdbdb;
+	--tertiary-accent: #fff;
 }
+
+h1 {
+	font-family: 'Indonesia-script', sans-serif;
+}
+
+a {
+	font-family: 'Indonesia-script', sans-serif;
+}
+
 body {
 	overflow-x: hidden;
 }

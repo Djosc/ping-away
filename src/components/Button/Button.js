@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 
+const colors = {
+	primary: '#000',
+	secondary: '#2b2b2b',
+	primaryAccent: '#ff0000',
+	secondaryAccent: '#dbdbdb',
+	tertiaryAccent: '#fff',
+};
+
 export const Button = styled(LinkS)`
 	/* background: ${({ primary }) => (primary ? '#000d1a' : '#CD853F')}; */
-	background: ${({ primary }) => (primary ? '#000' : '#fff')};
+	background: ${colors.primary};
 	border: 2px solid black;
 	white-space: nowrap;
 	outline: none;
@@ -16,17 +24,20 @@ export const Button = styled(LinkS)`
 	justify-content: center;
 	align-items: center;
 	padding: ${({ big }) => (big ? '16px 40px' : '14px 24px')};
-	color: ${({ primary }) => (primary ? '#fff' : '#000')};
+	color: ${colors.tertiaryAccent};
 	font-size: ${({ big }) => (big ? '18px' : '14px')};
 	margin-right: 0.7rem;
 	margin-left: 0.7rem;
 
 	&:hover {
 		transform: translateY(-2px);
+		background: ${colors.secondary};
+		color: ${colors.tertiaryAccent};
 	}
 
 	@media screen and (max-width: 768px) {
-		padding: 10px 14px;
+		margin-top: 1rem;
+		padding: 14px 34px;
 		font-size: 14px;
 	}
 `;

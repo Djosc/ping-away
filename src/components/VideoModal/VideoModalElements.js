@@ -35,7 +35,7 @@ export const ModalClose = styled(AiOutlineClose)`
 	cursor: pointer;
 	color: #fff;
 	position: absolute;
-	right: 3%;
+	right: 2%;
 	top: 3%;
 	height: 50px;
 	width: 50px;
