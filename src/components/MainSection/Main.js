@@ -25,7 +25,6 @@ import 'aos/dist/aos.css';
 const Main = () => {
 	const [openModal, setOpenModal] = useState(false);
 	const [hover, setHover] = useState(false);
-	const [hover2, setHover2] = useState(false);
 
 	useEffect(() => {
 		AOS.init({ duration: 5000 });

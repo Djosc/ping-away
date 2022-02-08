@@ -9,8 +9,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* font-family: 'Nunito', sans-serif; */
-	font-family: 'Indonesia-script', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	/* font-family: 'Indonesia-script', sans-serif; */
 	--primary: #000;
 	--secondary: #2b2b2b;
 	--primary-accent: #ff0000;
@@ -19,11 +19,11 @@
 }
 
 h1 {
-	font-family: 'Indonesia-script', sans-serif;
+	/* font-family: 'Indonesia-script', sans-serif; */
 }
 
 a {
-	font-family: 'Indonesia-script', sans-serif;
+	/* font-family: 'Indonesia-script', sans-serif; */
 }
 
 body {

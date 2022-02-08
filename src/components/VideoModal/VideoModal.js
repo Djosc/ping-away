@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { ModalBg, ModalContainer, ModalVideo, ModalClose } from './VideoModalElements';
 import video from '../../videos/video1.mp4';
 
+import AOS from 'aos';
+
 const VideoModal = ({ closeModal }) => {
+	useEffect(() => {
+		AOS.init({ duration: 5000 });
+	}, []);
+
 	return (
 		<>
 			<ModalBg id="bg">

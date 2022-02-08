@@ -110,7 +110,7 @@ export const MainBtnWrap = styled.div`
 export const EmailInput = styled.input`
 	max-width: 320px;
 	font-size: 19px;
-	padding: 0.2rem 1rem;
+	padding: 1rem 1rem;
 	border: 2px solid black;
 	margin-right: 0.7rem;
 	margin-left: 0.7rem;

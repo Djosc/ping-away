@@ -11,8 +11,8 @@ const colors = {
 };
 
 export const Nav = styled.nav`
-	background: ${({ scrollNav }) =>
-		scrollNav ? `${colors.primaryAccent}` : 'transparent'};
+	background: transparent;
+	/* background: ${colors.primaryAccent}; */
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -47,6 +47,12 @@ export const NavLogo = styled(LinkS)`
 	margin-left: 40px;
 	font-weight: bold;
 	text-decoration: none;
+	transition: 0.2s ease-in-out;
+	font-family: 'Indonesia-script', sans-serif;
+
+	&:hover {
+		color: ${colors.secondary};
+	}
 `;
 
 export const MobileIcon = styled.div`
