@@ -116,8 +116,8 @@ export const EmailInput = styled.input`
 	margin-left: 0.7rem;
 
 	@media screen and (max-width: 768px) {
-		font-size: 14px;
-		padding: 0.2rem 0.6rem;
+		font-size: 15px;
+		padding: 0.6rem 1rem;
 		margin-bottom: 0.5rem;
 	}
 `;

@@ -6,8 +6,6 @@ import {
 	SidebarWrapper,
 	SidebarMenu,
 	SidebarLink,
-	SideBtnWrap,
-	SidebarBtn,
 } from './SidebarElements';
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -29,23 +27,10 @@ const Sidebar = ({ isOpen, toggle }) => {
 						>
 							About
 						</SidebarLink>
-						<SidebarLink
-							to="projects"
-							spy={true}
-							smooth={true}
-							offset={-79}
-							duration={500}
-							onClick={toggle}
-						>
-							Projects
-						</SidebarLink>
 						<SidebarLink to="contact" onClick={toggle}>
 							Contact
 						</SidebarLink>
 					</SidebarMenu>
-					<SideBtnWrap>
-						<SidebarBtn to="/">Empty</SidebarBtn>
-					</SideBtnWrap>
 				</SidebarWrapper>
 			</SidebarContainer>
 		</>

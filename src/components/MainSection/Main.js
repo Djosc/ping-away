@@ -56,7 +56,7 @@ const Main = () => {
 					<VideoButton onClick={onModal}>
 						Watch Our Video{' '}
 						<AiOutlinePlayCircle
-							style={{ marginLeft: '1rem', fontSize: '34px' }}
+							style={{ marginLeft: '1rem', fontSize: '42px' }}
 						></AiOutlinePlayCircle>
 					</VideoButton>
 				</MainColumnLeft>
