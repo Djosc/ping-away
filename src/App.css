@@ -29,3 +29,19 @@ a {
 body {
 	overflow-x: hidden;
 }
+
+.spacer {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.layer1 {
+	background-image: url('./images/blob-scene-haikei-ping.svg');
+}
+
+.layer2 {
+	background-image: url('./images/blurry-gradient-haikei-ping1.svg');
+}

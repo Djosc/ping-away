@@ -11,7 +11,7 @@ const colors = {
 
 export const Button = styled(LinkS)`
 	/* background: ${({ primary }) => (primary ? '#000d1a' : '#CD853F')}; */
-	background: ${colors.primary};
+	background: ${colors.secondary};
 	border: 2px solid black;
 	white-space: nowrap;
 	outline: none;
@@ -31,7 +31,7 @@ export const Button = styled(LinkS)`
 
 	&:hover {
 		transform: translateY(-2px);
-		background: ${colors.secondary};
+		/* background: ${colors.secondaryAccent}; */
 		color: ${colors.tertiaryAccent};
 	}
 

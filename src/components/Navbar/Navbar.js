@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
 			<Nav scrollNav={scrollNav}>
 				<NavbarContainer>
 					<NavLogo to="/" onClick={toggleHome}>
-						Ping-Away
+						{/* Ping-Away */}
 					</NavLogo>
 					<MobileIcon onClick={toggle}>
 						<Bars />

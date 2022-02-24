@@ -42,12 +42,12 @@ const Main = () => {
 		<>
 			<MainContainer>
 				{openModal ? <VideoModal closeModal={onModal} /> : <></>}
-				<MainBg>
+				<MainBg className="spacer layer1">
 					{/* <VideoBg autoPlay loop muted src={video} type="video/mp4"></VideoBg> */}
-					<ImageBg src={bgImage} />
+					{/* <ImageBg src={bgImage} /> */}
 				</MainBg>
 				<MainColumnLeft>
-					<h1>An Exciting New Product</h1>
+					<h1 style={{ fontSize: '64px', fontFamily: 'Indonesia-script' }}>Ping-Away</h1>
 					<p>This product is amazing wow, so much saved space</p>
 					<MainBtnWrap>
 						<EmailInput placeholder="Your best E-mail..."></EmailInput>
