@@ -42,7 +42,7 @@ const Main = () => {
 		<>
 			<MainContainer>
 				{openModal ? <VideoModal closeModal={onModal} /> : <></>}
-				<MainBg className="spacer layer4">{/* <ImageBg src={bgImage} /> */}</MainBg>
+				<MainBg className="spacer layer1">{/* <ImageBg src={bgImage} /> */}</MainBg>
 				<MainColumnLeft>
 					<h1 style={{ fontSize: '64px', fontFamily: 'Indonesia-script' }}>Ping-Away</h1>
 					<p>This product is amazing wow, so much saved space</p>
