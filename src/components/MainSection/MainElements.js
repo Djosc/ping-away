@@ -31,7 +31,6 @@ export const MainBg = styled.div`
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	/* background-attachment: fixed; */
 `;
 
 export const VideoBg = styled.video`
@@ -49,7 +48,7 @@ export const ImageBg = styled.img`
 `;
 
 export const MainColumnLeft = styled.div`
-	position: absolute;
+	/* position: absolute; */
 	/* left: 4rem; */
 	display: flex;
 	flex-direction: column;

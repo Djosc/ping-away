@@ -42,10 +42,7 @@ const Main = () => {
 		<>
 			<MainContainer>
 				{openModal ? <VideoModal closeModal={onModal} /> : <></>}
-				<MainBg className="spacer layer1">
-					{/* <VideoBg autoPlay loop muted src={video} type="video/mp4"></VideoBg> */}
-					{/* <ImageBg src={bgImage} /> */}
-				</MainBg>
+				<MainBg className="spacer layer4">{/* <ImageBg src={bgImage} /> */}</MainBg>
 				<MainColumnLeft>
 					<h1 style={{ fontSize: '64px', fontFamily: 'Indonesia-script' }}>Ping-Away</h1>
 					<p>This product is amazing wow, so much saved space</p>
@@ -60,7 +57,7 @@ const Main = () => {
 						></AiOutlinePlayCircle>
 					</VideoButton>
 				</MainColumnLeft>
-				<MainColumnRight></MainColumnRight>
+				{/* <MainColumnRight></MainColumnRight> */}
 				{/* <DiscoverMore to="features" spy={true} smooth={true} offset={-74} duration={500}>
 					<h1>Discover More</h1>
 					<DownArrow></DownArrow>
